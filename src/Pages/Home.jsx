@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ProductCard from "../Components/ProductCard";
 import useProducts from "../Hooks/useProducts";
+import { ArrowRight } from "lucide";
 
 const Home = () => {
   // const products = useLoaderData();
@@ -22,6 +23,11 @@ const Home = () => {
         {featureProducts.map((product) => (
           <ProductCard key={product.id} product={product}></ProductCard>
         ))}
+      </div>
+      <div className="flex justify-center py-2 ">
+        <Link className="btn btn-outline" to="/products">
+          See All Products
+        </Link>
       </div>
     </div>
   );

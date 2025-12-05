@@ -12,10 +12,9 @@ const Products = () => {
         product.name.toLocaleLowerCase().includes(term)
       )
     : products;
-  console.log(searchedProducts);
 
   return (
-    <div>
+    <div className="space-y-6">
       <div className="flex justify-between py-5 items-center">
         <h1 className="text-2xl font-semibold">
           All Products{" "}
